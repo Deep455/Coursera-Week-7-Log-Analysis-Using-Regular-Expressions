@@ -1,0 +1,16 @@
+ls -l
+nano user_emails.csv
+sudo chmod +x csv_to_html.py
+sudo chmod  o+w /var/www/html
+sudo ./csv_to_html.py user_emails.csv /var/www/html/useremails.html
+
+
+nano ticky_check.py
+sudo chmod +x ticky_check.py
+./ticky_check.py
+ls -l
+cat error_message.csv
+cat user_statistics.csv
+sudo chmod +x csv_to_html.py
+sudo ./csv_to_html.py error_message.csv /var/www/html/errormessage.html
+sudo ./csv_to_html.py user_statistics.csv /var/www/html/userstatistics.html
